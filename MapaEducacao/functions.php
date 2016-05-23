@@ -10,6 +10,15 @@ function wpbootstrap_scripts_with_jquery()
 add_action( 'wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery' );
 
 
+
+function setup_theme() 
+{
+ add_theme_support('title-tag');
+}
+
+add_action( 'after_setup_theme', 'setup_theme' );
+
+
 if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'before_widget' => '',
