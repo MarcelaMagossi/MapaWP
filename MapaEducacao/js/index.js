@@ -1,4 +1,4 @@
-   /*$(document).ready(function(){
+   $(document).ready(function(){
 	   $(window).bind('scroll', function() {
 	   var navHeight = $( window ).height() - 70;
 			 if ($(window).scrollTop() > navHeight) {
@@ -8,6 +8,4 @@
 				 $('nav').removeClass('fixed');
 			 }
 		});
-	});*/
-
-	alert("Olha eleeeeeeeeeeeeeee!");
+	});
