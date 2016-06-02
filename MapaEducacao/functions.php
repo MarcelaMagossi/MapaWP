@@ -1,7 +1,7 @@
 <?php 
 
 
-
+/* Adicionado suporte para tag Title e menu dinâmicos ao carregar site */
 
 function setup_theme() 
 
@@ -20,12 +20,16 @@ function setup_theme()
 
 add_action( 'after_setup_theme', 'setup_theme' );
 
+/* Inserindo Jquery */
+
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", false, null);
    wp_enqueue_script('jquery');
 }
+
+/* Inserção de scripts JS e CSS */
 
 function mapa_scripts ()
 
@@ -45,7 +49,7 @@ function mapa_scripts ()
 
 add_action( 'wp_enqueue_scripts', 'mapa_scripts' );
 
-
+/* Registro sidebar padrão */
 
 
 function mapa_widgets_init(){
@@ -67,6 +71,7 @@ if ( function_exists('register_sidebar') )
 
 add_action( 'widgets_init', 'mapa_widgets_init' );
 
+/* Arquivo para menu com bootstrap */
 
 require_once('inc/wp_bootstrap_navwalker.php');
 
