@@ -39,6 +39,8 @@ function mapa_scripts ()
 	wp_register_script( 'custom-script', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'custom-script' );
 	wp_enqueue_script( 'index js', get_template_directory_uri() . '/js/index.js');
+	wp_enqueue_script( 'page js', get_template_directory_uri() . '/js/page.js');
+	wp_enqueue_script( 'slide js', get_template_directory_uri() . '/js/slide.js');
 	wp_enqueue_style( 'bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 	wp_enqueue_style( 'main', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style('fonte mapa', '//fonts.googleapis.com/css?family=Open+Sans:400,300,800,700|Oswald');
