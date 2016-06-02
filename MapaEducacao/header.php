@@ -18,13 +18,14 @@
 
     <![endif]-->
 
+
     <?php wp_head(); ?>
 
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse" role="button">

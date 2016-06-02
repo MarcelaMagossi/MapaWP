@@ -8,6 +8,22 @@ Version: 2.0
 
 */
 
+/* Ajuste do ícone para navbar-collapse */
+ .icon-bar{
+ 	background-color: #fff;
+ }
+
+ .navbar-toggle{
+ 	border-color: #fff;
+ 	margin-top: 20px;
+ }
+	
+ .navbar-collapse{
+
+ 	border: none;
+ }
+
+/* fim navbar-collapse */
 
 body {
 	font-family: 'Open sans', sans-serif; 
