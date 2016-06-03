@@ -1,8 +1,10 @@
-$(function() {
-  $('.js-nav a, .js-connect').click(function(e) {
-    e.preventDefault();
-    $('body, html').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-    }, 750);
-  });
-});
+jQuery(document).ready(function(){ 
+   jQuery('.nav a').click(function(){  
+    //Animate
+    $('html, body').stop().animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 800);
+    return false;
+  });
+
+ });
